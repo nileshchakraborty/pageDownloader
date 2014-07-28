@@ -21,10 +21,27 @@ public class PageDownloader {
 
     /**
      * @param args the command line arguments
+     * @throws java.net.MalformedURLException
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException, IOException {
         // TODO code application logic here
+        URL url = new URL("http://www.nileshchakraborty.com/wp/big-data");
         
+        // Get the input stream through URL Connection
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        con.addRequestProperty("User-Agent", "Mozilla/4.76");
+        InputStream is =con.getInputStream();
+
+        // Once you have the Input Stream, it's just plain old Java IO stuff.
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
+
+        String line = null;
+
+        // read each line and write to System.out
+        while ((line = br.readLine()) != null) {
+            System.out.println(line);
+        }
     }
     
 }
