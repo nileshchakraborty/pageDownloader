@@ -1,4 +1,4 @@
 pageDownloader
 ==============
 
-Description available at : http://www.nileshchakraborty.com/wp/fetching-contents-from-website/
+Description available at : http://blog.nileshchakraborty.com/fetching-contents-from-website/
