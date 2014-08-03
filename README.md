@@ -93,8 +93,7 @@ Full Source Here:
         while ((line = br.readLine()) != null) {
             System.out.println(line);
         }
+      }
     }
-    
-}
  
 Description ref : http://blog.nileshchakraborty.com/fetching-contents-from-website/
