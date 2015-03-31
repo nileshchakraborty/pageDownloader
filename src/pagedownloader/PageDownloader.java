@@ -26,7 +26,7 @@ public class PageDownloader {
      */
     public static void main(String[] args) throws MalformedURLException, IOException {
         // TODO code application logic here
-        URL url = new URL("http://www.nileshchakraborty.com/wp/big-data");
+        URL url = new URL("http://www.nileshchakraborty.com/");
         
         // Get the input stream through URL Connection
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
