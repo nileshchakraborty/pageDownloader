@@ -13,6 +13,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.regex.*;
 /**
  *
  * @author Nilesh
@@ -37,11 +38,12 @@ public class PageDownloader {
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
         String line = null;
-
+        String page = null; 
         // read each line and write to System.out
         while ((line = br.readLine()) != null) {
-            System.out.println(line);
+            page += line; 
         }
+        
     }
     
 }
